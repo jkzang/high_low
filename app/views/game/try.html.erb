@@ -1,0 +1,19 @@
+<h2>HiLo Game</h2>
+<p>Type in a number from between 1 to 100 and see if you're correct!</p>
+
+<form action="/game/try" method="get">
+  <input type="number" name="userguess" placeholder="USERGUESS" required/>
+  <input type="submit" name="" value="submit" /> <br><br>
+  <!-- <button type="button" onclick="">RESET COUNTER</button> -->
+</form>
+<%= button_to 'RESET COUNTER', game_reset_path, method: :get %>
+<br>
+<%= @counter %>
+
+<br><br>
+
+<%= @result %>
+
+<div class="img_container">
+  <img src="/Users/learn/Desktop/HiLo/app/assets/images/sunset.jpg"  />
+</div>
